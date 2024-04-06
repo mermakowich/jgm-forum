@@ -15,14 +15,20 @@ nav {
     display: flex;
 }
 
+img {
+    width: 70px;
+    height: 70px;
+}
+
 .logo {
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-right: auto;
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 30px;
     color: #FDC879;
     padding-left: 15px;
     padding-top: 12px;
@@ -32,15 +38,17 @@ h1 {
 .container {
     margin-left: 100px;
     margin-right: 100px;
+    flex-wrap: wrap;
 }
 
 header {
     background-color: #20348A;
+
 }
 
 nav .right-column {
     margin-left: auto;
-    padding-top: 20px;
+    padding-top: 25px;
 
 
 }
@@ -53,30 +61,34 @@ nav .right-column a {
 
     text-decoration: none;
     color: #FDC879;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
 
 }
 
-.main_nav {
-    padding-top: 30px;
+div .center {
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
 
 }
 
-.main_nav a {
+div .center a {
     text-decoration: none;
     color: #FDC879;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
 
 
 }
 
-.main_nav ul {
-    margin: 0 auto;
+div .center ul {
+    padding: auto;
+
 }
 
-.main_nav ul .padd {
+div .center ul .padd {
     padding-right: 70px;
 }
 
@@ -93,13 +105,13 @@ nav .right-column a {
 
 
 form {
-    
-    
+
+
     display: flex;
-    margin-top: 200px;
+    padding-top: 200px;
     padding-bottom: 200px;
     justify-content: center;
-    
+
 }
 
 
@@ -115,7 +127,7 @@ form {
     background-color: #FDC879;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.655);
     border-radius: 45%;
-    
+
 }
 
 .text-input {
@@ -135,24 +147,24 @@ form {
 
 .search-button::after {
     content: "";
-    
-    
+
+
     position: absolute;
-    left: 23px; 
+    left: 23px;
     top: 23px;
-  
+
     width: 30px;
     height: 30px;
-  
+
     background-image: url(../img/loupe.png);
-  
+
     background-size: 30px 30px;
-    
-    
+
+
 }
 
 .grad1 {
-    
+
     background: linear-gradient(#20348A, #0C1537);
 }
 
@@ -161,7 +173,7 @@ form {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
-    
+
 }
 
 .grad2 {
@@ -174,4 +186,54 @@ form {
     font-weight: 400;
 }
 
+.grad2 {
+    padding-top: 100px;
 
+}
+
+.btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #673ab7;
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+}
+
+.btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("../img/avatar.png");
+}
+
+.btn-up_hide {
+    display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+        background-color: #512da8;
+        /* цвет заднего фона при наведении */
+    }
+}
