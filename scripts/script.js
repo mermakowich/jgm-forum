@@ -2,7 +2,7 @@ const loginButton = document.querySelector(".login");
 const avatarPhoto = document.querySelector(".avatar");
 
 
-loginButton.addEventListener("click", function(event) {
+loginButton.addEventListener("click", function (event) {
   // Предотвратить перезагрузку страницы
   event.preventDefault();
 
@@ -44,3 +44,5 @@ const btnUp = {
 }
 
 btnUp.addEventListener();
+
+

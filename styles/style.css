@@ -108,8 +108,8 @@ form {
 
 
     display: flex;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 250px;
+    padding-bottom: 155px;
     justify-content: center;
 
 }
@@ -195,15 +195,12 @@ form {
     /* фиксированное позиционирование */
     position: fixed;
     /* цвет фона */
-    background-color: #673ab7;
+    background-color: #DFA44D;
     /* расстояние от правого края окна браузера */
-    right: 20px;
+    right: 50px;
     /* расстояние от нижнего края окна браузера */
-    bottom: 0;
-    /* скругление верхнего левого угла */
-    border-top-left-radius: 8px;
-    /* скругление верхнего правого угла */
-    border-top-right-radius: 8px;
+    bottom: 30px;
+    border-radius: 50px;
     /* вид курсора */
     cursor: pointer;
     /* отображение элемента как flex */
@@ -213,9 +210,9 @@ form {
     /* выравниваем элементы внутри элемента по центру вдоль главной оси */
     justify-content: center;
     /* ширина элемента */
-    width: 60px;
+    width: 80px;
     /* высота элемента */
-    height: 50px;
+    height: 80px;
 }
 
 .btn-up::before {
@@ -223,8 +220,8 @@ form {
     width: 40px;
     height: 40px;
     background: transparent no-repeat center center;
-    background-size: 100% 100%;
-    background-image: url("../img/avatar.png");
+    background-size: 160% 160%;
+    background-image: url("../img/top-btn.png");
 }
 
 .btn-up_hide {
@@ -233,7 +230,66 @@ form {
 
 @media (hover: hover) and (pointer: fine) {
     .btn-up:hover {
-        background-color: #512da8;
+        background-color: #FDC879;
         /* цвет заднего фона при наведении */
     }
+}
+
+.search-result p {
+    color: white;
+    font-size: 20px;
+    
+}
+
+.result {
+    display: flex;
+}
+
+.center-column {
+    display: flex;
+    margin: 0 auto;
+    text-wrap: wrap;
+    padding-top: 8px;
+}
+
+.firstli {
+    list-style-type: none;
+    
+    
+}
+
+.center-column li {
+    color: white;
+    font-size: 28px;
+    
+    padding-left: 3px;
+    font-weight: 400;
+    
+}
+
+.result .right-column {
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 15px;
+    margin-bottom: 45px;
+}
+
+.result .right-column a {
+    text-decoration: none;
+    color: #DFA44D;
+    font-size: 28px;
+    border-bottom: 1px solid #DFA44D;
+}
+
+.result1 {
+
+    margin-top: 55px;
+}
+
+.result .left-column {
+    margin-right: auto;
+}
+
+.baseli {
+    margin-left: 50px;
 }
