@@ -173,6 +173,7 @@ form {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
+    
 
 }
 
@@ -294,12 +295,41 @@ form {
     margin-left: 50px;
 }
 
-.search-result {
+/* .search-result {
     margin-top: 50px;
-}
+} */
 
 .center-bottom {
     text-align: center;
+    text-decoration: none;
     
 
+}
+
+.center-bottom p {
+    color: #DFA44D;
+    font-size: 26px;
+    text-decoration: none;
+
+}
+
+.best-games {
+    /* margin-top: 100px; */
+    margin-right: 105px;
+}
+
+.best-games .result .number p {
+    font-size: 64px;
+    margin-right: 55px;
+    color: #DFA44D;
+    
+}
+
+.poisk {
+    margin-left: 105px;
+    margin-right: 105px;
+}
+
+.bests-hh {
+    margin-top: 100px;
 }
