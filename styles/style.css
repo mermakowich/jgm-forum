@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -299,37 +300,60 @@ form {
     margin-top: 50px;
 } */
 
-.center-bottom {
+.poisk .center-bottom {
     text-align: center;
     text-decoration: none;
     
 
 }
 
-.center-bottom p {
+.poisk .center-bottom p {
     color: #DFA44D;
     font-size: 26px;
     text-decoration: none;
 
 }
 
+.best-games .center-bottom {
+    text-align: center;
+    text-decoration: none;
+    
+    
+}
+
+.best-games .center-bottom p {
+    color: #DFA44D;
+    font-size: 26px;
+    text-decoration: none;
+    padding-left: 105px;
+}
+
 .best-games {
     /* margin-top: 100px; */
     margin-right: 105px;
+    padding-bottom: 150px;
 }
 
 .best-games .result .number p {
     font-size: 64px;
-    margin-right: 55px;
+    margin-right: 50px;
     color: #DFA44D;
     
+}
+
+.best-games .result2 .number p {
+    font-size: 64px;
+    margin-right: 45px;
+    color: #DFA44D;
 }
 
 .poisk {
     margin-left: 105px;
     margin-right: 105px;
+    
 }
 
 .bests-hh {
-    margin-top: 100px;
+    margin-top: 150px;
 }
+
