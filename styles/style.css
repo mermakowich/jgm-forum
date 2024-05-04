@@ -212,18 +212,32 @@ form {
     /* выравниваем элементы внутри элемента по центру вдоль главной оси */
     justify-content: center;
     /* ширина элемента */
-    width: 80px;
+    width: 60px;
     /* высота элемента */
-    height: 80px;
+    height: 60px;
+    animation-name: top-btn;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+    animation-duration: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
 }
 
 .btn-up::before {
     content: "";
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background: transparent no-repeat center center;
     background-size: 160% 160%;
     background-image: url("../img/top-btn.png");
+    animation-name: top-img;
+    animation-duration: 800ms;
+    animation-iteration-count: 1;
+    animation-duration: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
 }
 
 .btn-up_hide {
@@ -233,6 +247,7 @@ form {
 @media (hover: hover) and (pointer: fine) {
     .btn-up:hover {
         background-color: #FDC879;
+        animation-name: none;
         /* цвет заднего фона при наведении */
     }
 }
@@ -304,13 +319,16 @@ form {
     text-align: center;
     text-decoration: none;
     
+    
 
 }
 
 .poisk .center-bottom p {
-    color: #DFA44D;
+    color: black;
     font-size: 26px;
     text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 15px;
 
 }
 
@@ -326,6 +344,8 @@ form {
     font-size: 26px;
     text-decoration: none;
     padding-left: 105px;
+    padding-top: 8px;
+    padding-bottom: 15px;
 }
 
 .best-games {
@@ -357,3 +377,51 @@ form {
     margin-top: 150px;
 }
 
+.poisk .center-bottom-div {
+    background-color: #DFA44D;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.center-bottom-div:hover {
+    background: #FDC879;
+}
+
+@keyframes top-btn {
+    0% {
+        width: 0;
+        height: 0;
+    }
+
+    
+
+    100% {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@keyframes top-img {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    
+    
+
+    100% {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.best-games .center-bottom-div {
+    background-color: #DFA44D;
+    max-width: 200px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-top: 20px;
+    
+}
