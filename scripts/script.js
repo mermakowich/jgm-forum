@@ -15,13 +15,13 @@ loginButton.addEventListener("click", function (event) {
 
 const btnUp = {
   el: document.querySelector('.btn-up'),
-  show() {
-    // удалим у кнопки класс btn-up_hide
-    this.el.classList.remove('btn-up_hide');
-  },
   hide() {
+    // удалим у кнопки класс btn-up_hide
+    this.el.classList.remove('btn-up_show');
+  },
+  show() {
     // добавим к кнопке класс btn-up_hide
-    this.el.classList.add('btn-up_hide');
+    this.el.classList.add('btn-up_show');
   },
   addEventListener() {
     // при прокрутке содержимого страницы
