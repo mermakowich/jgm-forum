@@ -19,9 +19,23 @@
     <div class="modalBackground">
         <div class="modalActive">
             <div class="modalClose">
-                <img src="modal.png" />
+                <img src="img/modal.png" />
             </div>
-            <div class="modalWindow"></div>
+            <div class="modalWindow">
+                <div class="authorization">
+                    <h3>Авторизация</h3>
+                    <form>
+                        <input type="text" placeholder="Введите логин" class="login-name">
+                        
+                    </form>
+                    <form>
+                     
+                        <input type="text" placeholder="Введите пароль" class="login-password">
+                        
+                    </form>
+                    <button type="submit" id="authorize" class="authorize-btn" value=""></button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -37,16 +51,17 @@
                 <div class="center">
 
                     <ul>
-                        <a href="#" class="padd">Главная</a>
-                        <a href="#" class="padd">Лучшие игры</a>
-                        <a href="#" class="padd">Блог</a>
+                        <a href="#top" class="padd">Главная</a>
+                        
+                        <a href="#best" class="padd">Лучшие игры</a>
+                        <a href="#bl" class="padd">Блог</a>
                         <a href="#">Чат</a>
                     </ul>
                 </div>
 
                 <div class="right-column">
 
-                    <a href="#">Сайт</a>
+                    <a href="https://developer.mozilla.org">Сайт</a>
                     <a href="#" class="login">Войти</a>
                     <a href="#"><img src="img/avatar.png" alt="" class="hidden avatar"></a>
 
@@ -63,7 +78,7 @@
     <main>
         <div class="grad1">
 
-    
+
 
             <div class="container">
 
@@ -155,11 +170,11 @@
                             </a>
                         </div>
 
-                        
+
                     </div>
                 </div>
 
-                <div class="search-result best-games">
+                <div class="search-result best-games" id="best">
 
                     <h2 class="bests-hh">Лучшие игры</h2>
 
@@ -226,7 +241,7 @@
 
                 </div>
 
-                <div class="blog">
+                <div class="blog" id="bl">
                     <h2>Блог</h2>
                     <div class="news-block">
                         <div class="news-item">
