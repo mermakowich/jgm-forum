@@ -15,6 +15,16 @@
 
 
 <body>
+
+    <div class="modalBackground">
+        <div class="modalActive">
+            <div class="modalClose">
+                <img src="modal.png" />
+            </div>
+            <div class="modalWindow"></div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <nav class="nav">
@@ -52,13 +62,16 @@
 
     <main>
         <div class="grad1">
+
+    
+
             <div class="container">
 
 
 
                 <form>
                     <input type="text" placeholder="Найдите игру Jeopardy..." class="text-input">
-                    <button type="submit" class="search-button" value=""></button>
+                    <button type="submit" id="searchb" class="search-button" value=""></button>
                 </form>
 
 
@@ -68,7 +81,7 @@
         <div class="grad2">
             <a href="#top" id="back-to-top" title="Back to top" class="btn-up btn-up_hide"></a>
             <div class="container">
-                <div class="search-result">
+                <div class="search-result hidden">
                     <h2>Результаты поиска</h2>
 
                     <div class="poisk">
@@ -142,12 +155,13 @@
                             </a>
                         </div>
 
-                        <h2 class="bests-hh">Лучшие игры</h2>
+                        
                     </div>
                 </div>
 
                 <div class="search-result best-games">
 
+                    <h2 class="bests-hh">Лучшие игры</h2>
 
 
 
