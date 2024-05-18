@@ -2,16 +2,16 @@
 const avatarPhoto = document.querySelector(".avatar");
 
 
-// loginButton.addEventListener("click", function (event) {
-//   // Предотвратить перезагрузку страницы
-//   event.preventDefault();
+function authorize() {
+  // Предотвратить перезагрузку страницы
+  event.preventDefault();
 
-//   // Скрыть форму
-//   loginButton.classList.add("hidden");
+  // Скрыть форму
+  loginButton.classList.add("hidden");
 
-//   // Отобразить вторую часть
-//   avatarPhoto.classList.remove("hidden");
-// });
+  // Отобразить вторую часть
+  avatarPhoto.classList.remove("hidden");
+};
 
 const btnUp = {
   el: document.querySelector('.btn-up'),
@@ -110,7 +110,7 @@ bodyMargin();
 modalTrigger.addEventListener("click", function () {
     console.log("hello")
     // делаем модальное окно видимым
-    modalBackground.style.display = "block";
+    modalBackground.style.display = "flex";
 
     // если размер экрана больше 1366 пикселей (т.е. на мониторе может появиться ползунок)
     if (windowInnerWidth >= 1366) {
@@ -127,6 +127,7 @@ modalClose.addEventListener("click", function () {
     if (windowInnerWidth >= 1366) {
         bodyMargin();
     }
+    authorize();
 });
 
 // закрытие модального окна на зону вне окна, т.е. на фон
@@ -139,3 +140,4 @@ modalBackground.addEventListener("click", function (event) {
     }
 });
 
+const externButton = document.querySelector(".center-bottom-div");

@@ -15,25 +15,31 @@
 
 
 <body>
-
     <div class="modalBackground">
         <div class="modalActive">
-            <div class="modalClose">
-                <img src="img/modal.png" />
-            </div>
             <div class="modalWindow">
+                <img src="img/modal.png" class="modalClose"/>
                 <div class="authorization">
                     <h3>Авторизация</h3>
                     <form>
-                        <input type="text" placeholder="Введите логин" class="login-name">
-                        
+                        <input type="text" placeholder="Введите логин" class="login-name account">
+                        <input type="password" placeholder="Введите пароль" class="login-password account">
+                        <input type="submit" id="authorize" class="authorize-btn" value="Войти">
+
                     </form>
+                </div>
+                <div class="registration hidden">
+                    <h3>Регистрация</h3>
                     <form>
-                     
-                        <input type="text" placeholder="Введите пароль" class="login-password">
-                        
+                        <input type="text" placeholder="Придумайте логин" class="login-name account">
+                        <input type="password" placeholder="Придумайте пароль" class="login-password account">
+                        <input type="submit" id="authorize" class="authorize-btn" value="Зарегистрироаться">
+
                     </form>
-                    <button type="submit" id="authorize" class="authorize-btn" value=""></button>
+                </div>
+                <div class="choice">
+                    <p class="reg">Ещё не зарегистрированы? <a href="">Зарегистрироваться</a></p>
+                    <p class="log hidden">Уже зарегистрированы? <a href="">Войти</a></p>
                 </div>
             </div>
         </div>
@@ -52,7 +58,7 @@
 
                     <ul>
                         <a href="#top" class="padd">Главная</a>
-                        
+
                         <a href="#best" class="padd">Лучшие игры</a>
                         <a href="#bl" class="padd">Блог</a>
                         <a href="#">Чат</a>
@@ -142,7 +148,7 @@
                             </div>
                         </div>
 
-                        <div class="result result3">
+                        <div class="result result3 hidden">
                             <div class="left-column">
                                 <h3>Игра 1</h3>
                                 <p>993 вопроса</p>

@@ -114,7 +114,7 @@ div .center ul .padd {
 }
 
 
-form {
+.grad1 form {
 
 
     display: flex;
@@ -498,6 +498,9 @@ body {
     overflow-x: hidden;
 }
 
+
+
+
 /* фон нашего модального окна */
 .modalBackground {
     display: none;
@@ -508,24 +511,23 @@ body {
     cursor: pointer;
     /* указываем z-индекс для корректного наслаивания */
     z-index: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 /* позиционирование самого модального окна */
 .modalActive {
-    position: absolute;
-    width: 350px;
-    height: 495px;
-    top: calc(50% - 250px);
-    left: calc(50% - 175px);
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    cursor: default;
-    padding: 40px 20px;
-    border: 5px solid #DFA44D;
+    /* position: absolute; */
+    /* width: 350px; */
+    /* height: 495px; */
+    /* top: calc(50% - 250px);
+    left: calc(50% - 175px); */
+    
+    /* position: relative; */
 }
 
 /* кнопочка закрытия модального окна */
-.modalClose {
+/* .modalClose {
     font-family: var(--font-regular);
     position: absolute;
     right: 5px;
@@ -533,23 +535,35 @@ body {
     width: 30px;
     height: 30px;
     cursor: pointer;
-}
+} */
 
 /* сама картинка кнопочки закрытия */
-.modalClose img {
+.modalWindow img {
     margin: 3px;
     width: 24px;
     height: 24px;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
 }
 
 /* делаем позиционирование внутренних элементов относительно модального окна */
 .modalWindow {
     position: relative;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 40px 20px;
+    border: 5px solid #DFA44D;
 }
 
-.modalActive h3 {
+.modalWindow h3 {
     text-align: center;
     color: #0C1537;
+    padding-bottom: 20px;
 
 }
 
@@ -557,8 +571,8 @@ body {
     display: flex;
 } */
 
-.modalWindow form input {
-    min-width: 80px;
+.modalWindow form .account {
+    min-width: 300px;
     min-height: 50px;
     border-radius: 50px;
     padding-left: 20px;
@@ -569,7 +583,40 @@ body {
     outline: none;
     font-family: "Oswald";
     font-size: 16px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.655);
+    /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.655); */
+}
+
+.modalWindow form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.authorize-btn {
+    max-width: 150px;
+    min-height: 35px;
+    border-radius: 50px;
+    text-align: center;
+    
+    color: black;
+    background-color: #DFA44D;
+    
+    
+    border: none;
+    outline: none;
+    font-family: "Oswald";
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+
+}
+
+.modalWindow .choice{
+    padding-top: 20px;
+    text-align: center;
+    
 }
 
 
