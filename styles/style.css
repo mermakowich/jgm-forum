@@ -183,7 +183,7 @@ div .center ul .padd {
     font-weight: 400;
     font-size: 36px;
     text-align: center;
-    
+
 
 }
 
@@ -224,9 +224,9 @@ div .center ul .padd {
     width: 0;
     /* высота элемента */
     height: 0;
-    
-    
-    
+
+
+
 }
 
 .btn-up::before {
@@ -242,13 +242,13 @@ div .center ul .padd {
     animation-duration: normal;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
-    
+
 }
 
 .btn-up_show {
     animation-name: top-btn;
     animation-duration: 0.6s;
-    
+
     /* animation-duration: normal; */
     animation-fill-mode: forwards;
 }
@@ -264,7 +264,7 @@ div .center ul .padd {
 .search-result p {
     color: white;
     font-size: 20px;
-    
+
 }
 
 .result {
@@ -280,17 +280,17 @@ div .center ul .padd {
 
 .firstli {
     list-style-type: none;
-    
-    
+
+
 }
 
 .center-column li {
     color: white;
     font-size: 28px;
-    
+
     padding-left: 3px;
     font-weight: 400;
-    
+
 }
 
 .result .right-column {
@@ -327,8 +327,8 @@ div .center ul .padd {
 .poisk .center-bottom {
     text-align: center;
     text-decoration: none;
-    
-    
+
+
 
 }
 
@@ -344,15 +344,15 @@ div .center ul .padd {
 .best-games .center-bottom {
     text-align: center;
     text-decoration: none;
-    
-    
+
+
 }
 
 .best-games .center-bottom p {
     color: black;
     font-size: 26px;
     text-decoration: none;
-    
+
     padding-top: 8px;
     padding-bottom: 15px;
 }
@@ -367,7 +367,7 @@ div .center ul .padd {
     font-size: 64px;
     margin-right: 50px;
     color: #DFA44D;
-    
+
 }
 
 .best-games .result2 .number p {
@@ -379,7 +379,7 @@ div .center ul .padd {
 .poisk {
     margin-left: 105px;
     margin-right: 105px;
-    
+
 }
 
 .bests-hh {
@@ -404,7 +404,7 @@ div .center ul .padd {
         height: 0;
     }
 
-    
+
 
     100% {
         width: 60px;
@@ -419,8 +419,8 @@ div .center ul .padd {
 .search-result .center-bottom {
     text-align: center;
     text-decoration: none;
-    
-    
+
+
 
 }
 
@@ -451,10 +451,10 @@ div .center ul .padd {
     margin-top: 10px;
 }
 
-.blog {
+/* /* .blog {
     margin-left: 100px;
     margin: 0 auto;
-}
+} */
 
 .blog h2 {
     color: #DFA44D;
@@ -463,7 +463,7 @@ div .center ul .padd {
     text-align: center;
 }
 
-.news-block {
+/* .news-block {
     display: flex;
     padding-top: 50px;
     margin-left: 100px;
@@ -477,7 +477,7 @@ div .center ul .padd {
     scroll-snap-align: start;
     width: 300px;
     text-align: center;
-}
+} */
 
 .best-games h2 {
     color: #DFA44D;
@@ -485,11 +485,11 @@ div .center ul .padd {
     font-size: 36px;
     text-align: center;
     margin-left: 100px;
-    
+
 
 }
 
-.search-result {
+*/ .search-result {
     margin-bottom: 150px;
 }
 
@@ -522,7 +522,7 @@ body {
     /* height: 495px; */
     /* top: calc(50% - 250px);
     left: calc(50% - 175px); */
-    
+
     /* position: relative; */
 }
 
@@ -598,25 +598,220 @@ body {
     min-height: 35px;
     border-radius: 50px;
     text-align: center;
-    
+
     color: black;
     background-color: #DFA44D;
-    
-    
+
+
     border: none;
     outline: none;
     font-family: "Oswald";
     font-size: 16px;
     padding-left: 50px;
     padding-right: 50px;
-    
+
 
 }
 
-.modalWindow .choice{
+.modalWindow p {
     padding-top: 20px;
     text-align: center;
+
+}
+
+.poisk .result2 {
+    display: none;
+}
+
+.poisk .result3 {
+    display: none;
+}
+
+
+
+.best-games .result3 {
+    display: none;
+}
+
+.blog-content {
+    color: white;
+    display: flex;
+    margin-left: 100px;
+    padding-top: 100px;
+}
+
+.news-item {
+    background-color: #DFA44D;
+    color: black;
+    display: flex;
+    border: 2px solid black;
+    padding: 30px;
+    min-width: 400px;
+
+}
+
+.news-item:hover {
+    background: #FDC879;
+}
+
+.blog .right-column {
+    background-color: #DBCFCF;
+    border: 2px solid black;
+    width: 100%;
+    margin-right: 100px;
+}
+
+.news-text {
+    display: none;
+}
+
+.container-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    /* height: 100vh; */
+}
+
+/* Chat Window Styles */
+.chat-window {
+    width: 500px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-area {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.user-input {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#send-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #0C1537;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #233A98;
+}
+
+.chat h2 {
+    color: #DFA44D;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.chat {
+    margin-top: 200px;
+}
+
+.registration-btn {
+    max-width: 150px;
+    min-height: 35px;
+    border-radius: 50px;
+    text-align: center;
+
+    color: black;
+    background-color: #DFA44D;
+
+
+    border: none;
+    outline: none;
+    font-family: "Oswald";
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+
+}
+
+.news-item h3 {
+    padding-left: 8px;
+}
+
+.news-text {
+    color: black;
+    padding: 100px;
+}
+
+.news-text p{
+    padding-left: 20px;
+    padding-top: 20px;
+
+
+}
+
+.news-active {
+    background-color: #FDC879;
+}
+
+.poisk {
+    margin-bottom: 150px;
+}
+
+.gameAva {
+    border-radius: 50px;
+    padding-left: 100px;
+}
+
+.game-info {
+    padding-top: 100px;
+    padding-left: 100px;
+    display: flex;
+}
+
+.game-chat {
+    margin-left: 200px;
+    margin-top: 0;
     
 }
 
+.game-info h1 {
+    color: #DFA44D;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.game-slide img {
+    margin-left: 17px;
+    margin-top: 20px;
+    width: 520px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid black;
+}
 

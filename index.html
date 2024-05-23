@@ -18,7 +18,7 @@
     <div class="modalBackground">
         <div class="modalActive">
             <div class="modalWindow">
-                <img src="img/modal.png" class="modalClose"/>
+                <img src="img/modal.png" class="modalClose" />
                 <div class="authorization">
                     <h3>Авторизация</h3>
                     <form>
@@ -26,21 +26,21 @@
                         <input type="password" placeholder="Введите пароль" class="login-password account">
                         <input type="submit" id="authorize" class="authorize-btn" value="Войти">
 
+
                     </form>
+                    <p class="reg">Ещё не зарегистрированы? <a href="" class="reg-btn">Зарегистрироваться</a></p>
                 </div>
                 <div class="registration hidden">
                     <h3>Регистрация</h3>
                     <form>
-                        <input type="text" placeholder="Придумайте логин" class="login-name account">
-                        <input type="password" placeholder="Придумайте пароль" class="login-password account">
-                        <input type="submit" id="authorize" class="authorize-btn" value="Зарегистрироаться">
+                        <input type="text" placeholder="Придумайте логин" class="registration-name account">
+                        <input type="password" placeholder="Придумайте пароль" class="registration-password account">
+                        <input type="submit" id="authorize" class="registration-btn" value="Зарегистрироаться">
 
                     </form>
+                    <p class="log">Уже зарегистрированы? <a href="">Войти</a></p>
                 </div>
-                <div class="choice">
-                    <p class="reg">Ещё не зарегистрированы? <a href="">Зарегистрироваться</a></p>
-                    <p class="log hidden">Уже зарегистрированы? <a href="">Войти</a></p>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -61,7 +61,7 @@
 
                         <a href="#best" class="padd">Лучшие игры</a>
                         <a href="#bl" class="padd">Блог</a>
-                        <a href="#">Чат</a>
+                        <a href="#chat">Чат</a>
                     </ul>
                 </div>
 
@@ -69,7 +69,7 @@
 
                     <a href="https://developer.mozilla.org">Сайт</a>
                     <a href="#" class="login">Войти</a>
-                    <a href="#"><img src="img/avatar.png" alt="" class="hidden avatar"></a>
+                    <a href="account.html"><img src="img/avatar.png" alt="" class="hidden avatar"></a>
 
                 </div>
 
@@ -92,7 +92,7 @@
 
                 <form>
                     <input type="text" placeholder="Найдите игру Jeopardy..." class="text-input">
-                    <button type="submit" id="searchb" class="search-button" value=""></button>
+                    <button href="#poisk" type="submit" id="searchb" class="search-button" value=""></button>
                 </form>
 
 
@@ -105,7 +105,7 @@
                 <div class="search-result hidden">
                     <h2>Результаты поиска</h2>
 
-                    <div class="poisk">
+                    <div class="poisk" id="poisk">
 
 
                         <div class="result result1">
@@ -124,11 +124,11 @@
                             </div>
 
                             <div class="right-column">
-                                <a href="#">Открыть</a>
+                                <a href="game.html">Открыть</a>
                             </div>
                         </div>
 
-                        <div class="result result2">
+                        <div class="result result2" id="1pres2">
                             <div class="left-column">
                                 <h3>Игра 1</h3>
                                 <p>993 вопроса</p>
@@ -144,11 +144,11 @@
                             </div>
 
                             <div class="right-column">
-                                <a href="#">Открыть</a>
+                                <a href="game.html">Открыть</a>
                             </div>
                         </div>
 
-                        <div class="result result3 hidden">
+                        <div class="result result3" id="1pres3">
                             <div class="left-column">
                                 <h3>Игра 1</h3>
                                 <p>993 вопроса</p>
@@ -164,14 +164,14 @@
                             </div>
 
                             <div class="right-column">
-                                <a href="#">Открыть</a>
+                                <a href="game.html">Открыть</a>
                             </div>
 
 
                         </div>
 
                         <div class="center-bottom-div">
-                            <a href="#" class="center-bottom">
+                            <a href="#" class="center-bottom" id="1cent">
                                 <p>показать ещё...</p>
                             </a>
                         </div>
@@ -207,7 +207,7 @@
                         </div>
 
                         <div class="right-column">
-                            <a href="#">Открыть</a>
+                            <a href="game.html">Открыть</a>
                         </div>
                     </div>
 
@@ -232,15 +232,42 @@
                         </div>
 
                         <div class="right-column">
-                            <a href="#">Открыть</a>
+                            <a href="game.html">Открыть</a>
+                        </div>
+                    </div>
+
+
+                    <div class="result result3" id="2pres3">
+
+                        <div class="number">
+                            <p>#3</p>
+                        </div>
+
+                        <div class="left-column">
+                            <h3>Игра 1</h3>
+                            <p>993 вопроса</p>
+                        </div>
+
+                        <div class="center-column">
+                            <ul style="list-style-type:disc" class="main-column center-column">
+                                <li class="firstli">Игры</li>
+                                <li class="baseli">Фильмы</li>
+
+                                <li class="baseli">Какой-то ещё тег</li>
+                            </ul>
+                        </div>
+
+                        <div class="right-column">
+                            <a href="game.html">Открыть</a>
                         </div>
                     </div>
 
                     <div class="center-bot">
                         <div class="center-bottom-div">
-                            <a href="#" class="center-bottom">
+                            <a href="#" class="center-bottom" id="2cent">
                                 <p>показать ещё...</p>
                             </a>
+                            
                         </div>
                     </div>
 
@@ -249,43 +276,66 @@
 
                 <div class="blog" id="bl">
                     <h2>Блог</h2>
-                    <div class="news-block">
-                        <div class="news-item">
-                            <h3>Новость 1</h3>
-                            <p>Мы добавили что-то...</p>
-                            <a href="">читать далее</a>
+                    <div class="blog-content">
+                        <div class="left-column">
+
+                            <div class="news-item news-item1" type="button">
+                                <p>1</p>
+                                <h3>У нас есть форум!</h3>
+                            </div>
+                            <div class="news-item news-item2" type="button">
+                                <p>2</p>
+                                <h3>У нас есть форум!</h3>
+                            </div>
+                            <div class="news-item news-item3" type="button">
+                                <p>3</p>
+                                <h3>У нас есть форум!</h3>
+                            </div>
+
+
                         </div>
-                        <div class="news-item">
-                            <h3>Новость 2</h3>
-                            <p>Мы добавили что-то...</p>
-                            <a href="">читать далее</a>
+
+                        <div class="right-column" id="news-right">
+                            <div class="news-text news-text1">
+                                <img src="img/icon1.png" alt="">
+                                <p>У нас есть форум!</p>
+                            </div>
+                            <div class="news-text news-text2">
+                                <img src="img/icon1.png" alt="">
+                                <p>У нас нет форума!</p>
+
+                            </div>
+                            <div class="news-text news-text3">
+                                <img src="img/icon1.png" alt="">
+                                <p>@#$%&!</p>
+
+                            </div>
+
+
                         </div>
-                        <div class="news-item">
-                            <h3>Новость 3</h3>
-                            <p>Мы добавили что-то...</p>
-                            <a href="">читать далее</a>
-                        </div>
-                        <div class="news-item">
-                            <h3>Новость 1</h3>
-                            <p>Мы добавили что-то...</p>
-                            <a href="">читать далее</a>
-                        </div>
-                        <div class="news-item">
-                            <h3>Новость 2</h3>
-                            <p>Мы добавили что-то...</p>
-                            <a href="">читать далее</a>
-                        </div>
-                        <div class="news-item">
-                            <h3>Новость 3</h3>
-                            <p>Мы добавили что-то...</p>
-                            <a href="">читать далее</a>
+                    </div>
+                </div>
+
+                <div class="chat" id="chat">
+                    <h2>Чат</h2>
+                    <div class="container-chat">
+                        <div class="chat-window">
+                            <div class="chat-area">
+                                <div class="chat-messages">
+                                    <!-- Chat Messages -->
+                                </div>
+                            </div>
+                            <div class="user-input">
+                                <input type="text" id="message-input" placeholder="Напиши свой комментарий">
+                                <button id="send-button">Отправить</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </main>
 
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
